@@ -5,17 +5,58 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+
+    <style>
+        form { line-height: 1.5em; margin: 36px 24px; }
+        input, select { font-size: 0.9rem; }
+        button { font-size: 1rem; }
+        label { margin-right: 8px; vertical-align: top; }
+      </style>
 </head>
 <body>
-    안녕하세요, <span draggable="true">홍길동</span> 한주안의 웹사이트입니다.
-    안녕하세요, <span draggable="true">홍길동</span> 한주안의 웹사이트입니다.
-    안녕하세요, <span draggable="true">홍길동</span> 한주안의 웹사이트입니다.
-    안녕하세요, <span draggable="true">홍길동</span> 한주안의 웹사이트입니다.
-    안녕하세요, <span draggable="true">홍길동</span> 한주안의 웹사이트입니다.
-    안녕하세요, <span draggable="true">홍길동</span> 한주안의 웹사이트입니다.
-    안녕하세요, <span draggable="true">홍길동</span> 한주안의 웹사이트입니다.
-    안녕하세요, <span draggable="true">홍길동</span> 한주안의 웹사이트입니다.
-    안녕하세요, <span draggable="true">홍길동</span> 한주안의 웹사이트입니다.
-    안녕하세요, <span draggable="true">홍길동</span> 한주안의 웹사이트입니다.
+
+    <label for="ip-name">이름</label>
+    <input id="ip-name" type="text" placeholder="이름을 입력하세요" maxlength="4"/>
+    <br>
+    <label for="ip-pw">비밀번호</label>
+    <input id="ip-pw" type="password"/>
+    <br>
+    <label for="ip-age">나이</label>
+    <input id="ip-age" type="number"/>
+    <br>
+    <br>
+    <label for="ip-married">기혼</label>
+    <input id="ip-married" type="checkbox" checked/>
+    <br>
+    <label>역할</label>
+    <input id="input-dev" name="role" type="radio" checked/>
+    <label for="input-dev">개발자</label>
+    <input id="input-design" name="role" type="radio"/>
+    <label for="input-design">디자이너</label>
+    <input id="input-pm" name="role" type="radio"/>
+    <label for="input-pm">매니저</label>
+    <br>
+    <br>
+    <label for="ip-married">첨부</label>
+    <input id="ip-file" type="file" multiple/>
+    <br>
+    <br>
+    <label for="sel-dep">부서</label>
+    <select>
+        <option value="adm">운영팀</option>
+        <option value="mkt">마케팅팀</option>
+        <option value="frt">프론트엔드팀</option>
+        <option value="bck">백엔드팀</option>
+        <option value="tst">테스트팀</option>
+        <option value="mnt">유지보수팀</option>
+    </select>
+    <br>
+    <br>
+    <label for="intro">소개</label>
+    <textarea id="intro"></textarea>
+    <br>
+    <br>
+    <button type="button">제출</button>
+    <button type="button">취소</button>
 </body>
 </html>
