@@ -1,8 +1,5 @@
-.finished { color: skyblue}
-.importance { text-decoration: underline;}
+section { padding : 32px;}
 
-/* 특정 태그에 해당 클래스가 있을 때*/
-li.importance { background-color: yellow;}
-
-/* 하나 이상의 클래스*/
-.importance.finished { font-size: italic;}
+/*아래부터*/
+#intro { background-color: yellow;}
+#board { background-color: pink;}
