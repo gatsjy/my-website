@@ -1,12 +1,35 @@
-ul{padding:0;}
-ul li{
-    list-style: none;
-    padding: 8px 16px;
-    border-top: 1px solid lightgray;
+.blue-button {
+    font-size:1em;
+    padding:16px 24px;
+    color:white;
+    background-color: dodgerblue;
+    border:0;
+    cursor:pointer;
+    border-radius: 4px;
 }
+.blue-button:hover{
+    background-color: darkblue;
+}
+
+div{
+    position: relative; display: inline-block;
+    color: white; background-color: tomato;
+    height: 56px; line-height: 56px; padding: 0 24px;
+    cursor: pointer;
+}
+div ul {
+    display: none;
+    position: absolute;
+    width: 100px; left: 12px; top: 56px; margin: 0; padding: 0;
+}
+
 /*아래부터*/
-ul li:first-child {border-top: 2px solid black;}
-ul li:last-child {border-bottom: 2px solid black;}
-ul li:nth-child(3){color:purple;}
-ul li:nth-child(even){background-color: #eee;}
-ul li:nth-child(3n+1){text-decoration: underline;}
+div:hover ul {display: block;}
+
+div ul li {
+    background-color: #444;
+    height: 44px; line-height: 44px; text-align: center;
+}
+
+/*아래부터*/
+div ul li:hover {background-color: #222;}
