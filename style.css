@@ -1,5 +1,8 @@
-section { padding : 32px;}
+label{
+    display: inline-block;
+    width:80px;
+}
 
-/*아래부터*/
-#intro { background-color: yellow;}
-#board { background-color: pink;}
+/* 아래부터 */
+input[type=text] {background-color: #09445c;}
+label[for=ip-id] {color:blue;}
