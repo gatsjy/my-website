@@ -1,6 +1,12 @@
-.blue { color : blue;}
-.underline {text-decoration: underline;}
-
-/*아래 부터*/
-.underline:not(.blue) { color: red;}
-.underline:not(.blue):not(li) {color:inherit}
+ul{padding:0;}
+ul li{
+    list-style: none;
+    padding: 8px 16px;
+    border-top: 1px solid lightgray;
+}
+/*아래부터*/
+ul li:first-child {border-top: 2px solid black;}
+ul li:last-child {border-bottom: 2px solid black;}
+ul li:nth-child(3){color:purple;}
+ul li:nth-child(even){background-color: #eee;}
+ul li:nth-child(3n+1){text-decoration: underline;}
