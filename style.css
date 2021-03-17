@@ -1,7 +1,6 @@
-div { background-color: white; }
+.blue { color : blue;}
+.underline {text-decoration: underline;}
 
-section * {
-    display: inline-block;
-    background-color: orange;
-    padding: 24px;
-}
+/*아래 부터*/
+.underline:not(.blue) { color: red;}
+.underline:not(.blue):not(li) {color:inherit}
