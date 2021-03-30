@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        var a = 5
+        if ( a < 10 ){
+            console.log('10보다 작습니다.');
+        }else if(a <20){
+            console.log('20보다 작습니다.');
+        }
+
+        switch("yello"){
+            case "blue":
+                console.log('파란색입니다.');
+                break;
+            case "green":
+                console.log('초록입니다.');
+                break;
+            default:
+                console.log('모든 벗어나는 조건.');
+        }
+
+        function myNum(num){
+            if(num<10){
+                return "10보다 작습니다."
+            }else{
+                return "10보다 큽니다."
+            }
+        }
+        var test = myNum(15);
+        console.log(test)
+
+    </script>
+</body>
+</html>
