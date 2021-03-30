@@ -18,20 +18,22 @@ var sum = function(){
     console.log("sum 함수를 호출했나요?")
 }
 
-function Car(a,b,c){
+function Car(a,b){
     this.name=a;
     this.color=b;
-    var move = c;
 }
 
-var a = new Car("현대","초록","전진");
-console.log(a.name);
-console.log(a.color);
-console.log(a.move);
+Car.prototype.move = function(){
+    console.log(this.name+ "차이고 "+this.color+"색 입니다.")
+}
+// 하나의 객체
+var a = new Car("현대","초록");
+a.move()
+// 하나의 객체
+var b = new Car("기아","파란");
+b.move()
 
-var b = new Car("기아","파란","전진");
-console.log(b.name);
-console.log(b.color);
+
 </script>
 </body>
 </html>
