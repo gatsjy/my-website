@@ -8,12 +8,20 @@
 </head>
 <body>
 <script>        
-var a = [1,2,3,4,10];
-Array.prototype.print = function(){
-    for (var i=0; i <this.length; i++){
-        console.log(i);
+var a = {
+    'a' : 110,
+    'b' : 'hello',
+    'c' : function(){
+        console.log(a);
     }
 }
+Object.prototype.sum = function(){
+    console.log(this.a + 20);
+}
+a.c();
+a.c();
+a.sum();
+console.log(a.a);
 </script>
 </body>
 </html>
