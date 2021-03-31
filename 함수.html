@@ -8,31 +8,75 @@
 </head>
 <body>
 <script>
-function test(a,b){
-    console.log("a는 "+a)
-    console.log("b는 "+b)
+// function test(a,b){
+//     console.log("a는 "+a)
+//     console.log("b는 "+b)
+//     return a+b;
+// }
+
+// var sum = function(){
+//     console.log("sum 함수를 호출했나요?")
+// }
+
+// function Car(a,b){
+//     this.name=a;
+//     this.color=b;
+// }
+
+// Car.prototype.move = function(){
+//     console.log(this.name+ "차이고 "+this.color+"색 입니다.")
+// }
+// // 하나의 객체
+// var a = new Car("현대","초록");
+// a.move()
+// // 하나의 객체
+// var b = new Car("기아","파란");
+// b.move()
+
+// class Car {
+//     constructor(a,b){
+//         this.name = a;
+//         this.color = b;
+//     }
+//     move(){
+//         console.log(this.name+"차이고 "+this.color+"색입니다.");
+//     }
+// }
+
+// var a = new Car("현대","노란");
+// var b = new Car("기아","빨강");
+
+const a = 10;
+let b = 1;
+if(true){
+    let b = 2;
+    console.log(b);
+}
+console.log(b);
+
+const arr = 'hello';
+console.log('arr 은'+ arr);
+console.log(`arr은 ${arr}`);
+
+var func1 = function(a,b){
     return a+b;
 }
 
-var sum = function(){
-    console.log("sum 함수를 호출했나요?")
-}
+const func2 = (a,b) => a+b
+console.log(func2(1,2));
 
-function Car(a,b){
-    this.name=a;
-    this.color=b;
-}
+const [d,e,f] = [1,2,3];
+console.log(e);
 
-Car.prototype.move = function(){
-    console.log(this.name+ "차이고 "+this.color+"색 입니다.")
-}
-// 하나의 객체
-var a = new Car("현대","초록");
-a.move()
-// 하나의 객체
-var b = new Car("기아","파란");
-b.move()
+const arr1 = [1,2]
+const arr2 = [3,4,5]
+const arr3 = [...arr1 , ...arr2]
+console.log(arr3)
 
+function abc(a, ...b){
+    console.log(arguments[0])
+}
+abc('nodejs','hello',1);
 
 </script>
 </body>
