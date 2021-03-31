@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        function test(num , callback){
+            console.log(num);
+            callback();
+        }
+        
+        // 콜백함수 관련
+        test(1, function(){
+            console.log('콜백함수가 실행됩니다.')
+        })
+
+        // 자바스크립트 클로저
+        // 페이지네이션 처리할때.. 용도에 따라서 증가되는 공간이 필요할 때??
+        function ex_cl(){
+            var number = 0;
+            return function(){
+                number++;
+                console.log(num);
+            }
+        }
+
+        var test = ex_cl();
+        // 리턴을 함수로 줬기 때문에 다음과 같은 상황이 가능하다.
+        test();
+        test();
+    </script>
+</body>
+</html>
